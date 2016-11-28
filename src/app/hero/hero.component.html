@@ -1,0 +1,26 @@
+<main>
+  <h2>My Heroes</h2>
+  
+  <div *ngIf="selectedHero">
+  <h2>
+    {{selectedHero.name | uppercase}} is my hero
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+  <div class="ui middle aligned divided list">
+  <div class="item" *ngFor="let hero of heroes">
+    <div class="content list">
+      <a class="header" (click)="onSelect(hero)">
+      {{hero.id}} : {{hero.name}}
+      </a>
+    </div>
+  </div>
+</div>
+</main>
+<style>
+  .list
+  {
+    padding:10px 20px; 
+  }
+</style>

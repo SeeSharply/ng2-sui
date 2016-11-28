@@ -1,0 +1,10 @@
+<!--component html goes here -->
+<h3>DashBoard</h3>
+<h3>Top Heroes</h3>
+<div class="ui grid">
+  <div *ngFor="let hero of heroes">
+    <div class="ui button basic" (click)="gotoDetail(hero.id)">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </div>
+</div>
