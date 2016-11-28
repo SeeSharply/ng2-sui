@@ -19,7 +19,11 @@ export class HeroComponent implements OnInit{
 
   ngOnInit(): void {
     this.heroService.getHeroes()
-    .then(heros=>this.heroes = heros);
+    .then(heros=>{
+      var a=heros;
+      console.log(a);
+      this.heroes = heros;
+    });
   }
   onSelect(hero:Hero):void
   {

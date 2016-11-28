@@ -1,5 +1,7 @@
 #log
 logs
+.vscode
+chrome
 *.log
 npm-debug.log*
 

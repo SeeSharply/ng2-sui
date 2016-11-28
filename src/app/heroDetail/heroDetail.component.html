@@ -1,9 +1,16 @@
 <div *ngIf="hero">
     <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
-    <div class="ui input focus">
-      <label>name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name"/>
-    </div>
-    <button (click)="goBack()">Back</button>
-  </div>
+  <div class="ui form">
+      <div class="inline field">
+        <label class="ui three wide">ID</label>
+        <label>{{hero.id}}</label>
+      </div>
+      <div class="inline field">
+        <label class="ui three wide ">Name</label>
+        <input type="text" class="focus"  [(ngModel)]="hero.name" placeholder="Name">
+      </div>
+      <div class="inline field">
+        <button class="ui button primary" (click)="goBack()">Back</button>
+      </div>
+</div>
+</div>

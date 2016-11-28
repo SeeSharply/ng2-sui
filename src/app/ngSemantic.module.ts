@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';//输入框等使用ngBind需要
 import { RouterModule }   from '@angular/router';
+import { HttpModule }    from '@angular/http';
 import {HeroService} from "../datas/hero.service";
 
 import { HeroComponent } from './hero/hero.component';
@@ -14,6 +15,7 @@ import {AppRoutingModule} from "./app.routing";
     imports: [ 
         BrowserModule,
         FormsModule,
+        HttpModule,
         AppRoutingModule
         ],
     declarations: [ 

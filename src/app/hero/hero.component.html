@@ -3,9 +3,9 @@
   
   <div *ngIf="selectedHero">
   <h2>
-    {{selectedHero.name | uppercase}} is my hero
+    <span class="ui" style="color:#326901">{{selectedHero.name | uppercase}}</span> is my hero
   </h2>
-  <button (click)="gotoDetail()">View Details</button>
+  <button class="ui button positive" (click)="gotoDetail()">View Details</button>
 </div>
 
   <div class="ui middle aligned divided list">
