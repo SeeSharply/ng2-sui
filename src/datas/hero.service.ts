@@ -13,10 +13,13 @@ private handleError(error: any): Promise<any> {
 
 constructor(private http:Http){}
     getHeroes(): Promise<Hero[]> {
+        return Promise.resolve(HEROES);
+        /*
         return this.http.get(this.heroesUrl)
                    .toPromise()
-                   .then(response => response.json().data as Hero[])
+                   .then(response => response.json() as Hero[])
                    .catch(this.handleError);
+                   */
   }
     getHero(id:number):Promise<Hero>
     {           
