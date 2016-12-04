@@ -9,8 +9,7 @@ import {DashBoardComponent} from "./dash-board/dash-board.component"
 const routes:Routes=[
 { path: 'heroes',component: HeroComponent},
 { path: 'dashboard',component: DashBoardComponent},
-{ path: 'detail/:id',component: HeroDetailComponent},
-{ path: '',redirectTo: '/heroes',pathMatch: 'full' },
+{ path: 'detail/:id',component: HeroDetailComponent}
 ];
 
 @NgModule({

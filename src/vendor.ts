@@ -9,5 +9,3 @@ import '@angular/router';
 import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
-import '../public/semantic/semantic.css';
-import '../public/semantic/semantic.js';

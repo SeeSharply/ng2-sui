@@ -6,9 +6,57 @@
     <div class="ui large buttons">
         <a class="ui button positive" routerLink="/dashboard">Dashboard</a>
         <div class="or"></div>
-        <a routerLink="/heroes" class="ui button primary">Heroes</a>
+        <a  routerLink="/heroes" class="ui button primary app">Heroes</a>
     </div>
+    <ul>
+        <li><a href="/buttondemo"></a></li>
+    </ul>
 </nav>
+<!--buttons      -->
+<h1>buttons 按钮</h1>
+ <a class="waves-effect waves-dark btn">button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
 <div class="ui divider"></div>
+
+<ns-button float="true" wave="light" color="red" (click)="showLog()"><i class="material-icons right">cloud</i>float</ns-button>
+        
+<ns-button color="green" (click)="showLog()"><i class="material-icons left">cloud</i>NsButton <span class="new badge red">4</span></ns-button>
+
+
+<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+<ns-action-btns type= "horizontal">
+    <ns-button float="true" size="large" color="blue">
+        <i class="large material-icons">mode_edit</i>
+    </ns-button>
+    <ul>
+        <li>
+            <ns-button float="true" disabled="true" color="red"><i class="material-icons">insert_chart</i></ns-button>
+        </li>
+        <li>
+            <ns-button float="true" color="blue"><i class="material-icons">insert_chart</i></ns-button>
+        </li>
+        <li>
+            <ns-button float="true" color="green"><i class="material-icons">insert_chart</i></ns-button>
+        </li>
+    </ul>
+  </ns-action-btns>
+<!--badges      -->
+<h1>badges-脚标</h1>
+  <div class="collection">
+    <a href="#!" class="collection-item"><ns-badge isnew="true" placement="tags" color="red">1</ns-badge>Alan</a>
+    <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
+    <a href="#!" class="collection-item">Alan</a>
+    <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
+  </div>
+  <!--面包屑      -->
+<h1>bread-面包屑</h1>
+<ns-breadcrumb>
+    <ns-breadcrumb-item type="dark" to="#!">First</ns-breadcrumb-item>
+    <ns-breadcrumb-item to="#!">Second</ns-breadcrumb-item>
+    <ns-breadcrumb-item to="#!">Third</ns-breadcrumb-item>
+    <a href="#!" class="breadcrumb">First</a>
+</ns-breadcrumb>
 <router-outlet></router-outlet>
 </div>

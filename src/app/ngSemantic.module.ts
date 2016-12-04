@@ -11,13 +11,15 @@ import { HeroDetailComponent } from './heroDetail/heroDetail.component';
 import {DashBoardComponent} from "./dash-board/dash-board.component"
 import {AppRoutingModule} from "./app.routing";
 import {HeroSearchComponent} from './hero-search/hero-search.component';
+import {Ng2SuiModule} from "../../components/Ng2Sui.module";
 
 @NgModule({
     imports: [ 
         BrowserModule,
         FormsModule,
         HttpModule,
-        AppRoutingModule
+        AppRoutingModule,
+        Ng2SuiModule
         ],
     declarations: [ 
         AppComponent,

@@ -1,0 +1,40 @@
+.breadcrumb:before {
+    content: '\E5CC';
+    color: rgba(255, 255, 255, 0.7);
+    vertical-align: top;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0 10px 0 8px;
+    -webkit-font-smoothing: antialiased;
+}
+.breadcrumb-dark
+{
+    color: #000 0.7;
+}
+.breadcrumb:first-child:before {
+  display: none;
+}
+ns-breadcrumb-item
+{
+    color:green;
+}
+ns-breadcrumb-item:before {
+    content: '\E5CC';
+    color: rgba(255, 255, 255, 0.7);
+    vertical-align: top;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0 10px 0 8px;
+    -webkit-font-smoothing: antialiased;
+}
+
+ns-breadcrumb-item:first-child:before
+{
+    display: none;
+}

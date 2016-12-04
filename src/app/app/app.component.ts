@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['app.component.css']
 })
 export class AppComponent {
-    title:string="tour of heroes"
+    title:string="tour of heroes";
+    showLog()
+    {
+        console.log(this.title);
+    }
 
 }

@@ -1,7 +1,7 @@
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
-const WriteFilePlugin = require('write-file-webpack-plugin');
+//const WriteFilePlugin = require('write-file-webpack-plugin');
 var helpers = require('./helpers');
 
 module.exports = webpackMerge(commonConfig, {
@@ -20,7 +20,7 @@ module.exports = webpackMerge(commonConfig, {
 
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new WriteFilePlugin()
+   // new WriteFilePlugin()
   ],
 
   devServer: {
